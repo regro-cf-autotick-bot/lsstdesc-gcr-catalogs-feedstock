@@ -1,5 +1,5 @@
 {% set name = "lsstdesc-gcr-catalogs" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/LSSTDESC/gcr-catalogs/archive/v{{ version }}.tar.gz
-  sha256: feffb3d42b33c64530009127cb3ffe02659bfb18ac109dcf0a6756a16885c113
+  sha256: 22bf3d6abd9cf73970cf70d5814b2311bc017253a17194ead2b03b485ebf3985
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pyyaml
     - numpy
     - astropy
-    - gcr >=0.8.8
+    - gcr >=0.9.2
     - h5py
     - healpy
     - pandas
